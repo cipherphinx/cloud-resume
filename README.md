@@ -1,2 +1,2 @@
 # cloud-resume
-Cloud Resume challenge project
+This is my own implementation of the popular "The Cloud Resume Challenge"
