@@ -1,20 +1,23 @@
-import json
+import os
 import boto3
 
-client = boto3.client('dynamodb')
+dynamodb = boto3.client('dynamodb')
 
 def lambda_handler(event, context):
-  data = client.scan(
-    TableName='visit_count'
-  )
 
-  response = {
-      'statusCode': 200,
-      'body': json.dumps(data),
-      'headers': {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
-  }
+    table_name = os.environ['TABLE_NAME']
 
-  return response
+    response = dynamodb.update_item(
+        TableName=table_name,
+        Key={
+            'website':{
+                'S': 'resume.arfeljunvelasco.live'}    },
+        UpdateExpression='SET visitor_count = visitor_count + :inc',
+        ExpressionAttributeValues={
+            ':inc': {'N': '1'}
+        },
+        ReturnValues="UPDATED_NEW")
+
+    print("UPDATING ITEM")
+
+    print(response)
