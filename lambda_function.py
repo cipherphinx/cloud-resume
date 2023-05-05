@@ -20,4 +20,4 @@ def lambda_handler(event, context):
 
     print("UPDATING ITEM")
 
-    print(response)
+    print(response["Attributes"]["visitor_count"]["N"])
