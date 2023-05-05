@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
+        <title>Resume - Arfel Jun Velasco</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -35,6 +35,10 @@
             </div>
         </nav>
         <!-- Page Content-->
+        <p class="count" style="text-align:right;">
+            <span><i class="fa-solid fa-binoculars"></i>Site visits:</span>
+            <b><i><span id="visit_count"></span></i></b>
+        </p>
         <div class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section" id="about">
@@ -210,5 +214,26 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+
+                      const API_URL = "https://za7vzhc1nc.execute-api.ap-southeast-1.amazonaws.com/v1/";
+
+                      async function makeAPICall() {
+                        const response = await fetch(API_URL, {method: "POST"});
+                        let result = await response.json();
+                        let visitor_count = result.Attributes.visitor_count.N;
+
+                        return visitor_count;
+
+                      }
+
+                      async function show_result() {
+                        let result = await makeAPICall();
+                        document.getElementById("visit_count").innerHTML = result;
+                      }
+
+                      show_result();
+
+                    </script>
     </body>
 </html>
