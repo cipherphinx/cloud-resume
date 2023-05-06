@@ -6,6 +6,7 @@
 //
 // Scripts
 // 
+import 'bootstrap';
 
 window.addEventListener('DOMContentLoaded', event => {
 
