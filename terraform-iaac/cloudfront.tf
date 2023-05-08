@@ -9,7 +9,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   comment             = "Some comment"
   default_root_object = "index.html"
 
-  aliases = ["resume.arfeljunvelasco.com"]
+  aliases = ["resume1.arfeljunvelasco.live"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -58,19 +58,19 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   restrictions {
     geo_restriction {
       restriction_type = "none"
-      locations        = ["US", "CA", "GB", "DE"]
     }
   }
 
   viewer_certificate {
     acm_certificate_arn = data.aws_acm_certificate.amazon_issued.arn
+    ssl_support_method  = "sni-only"
   }
 }
-
 
 data "aws_acm_certificate" "amazon_issued" {
   domain      = "*.arfeljunvelasco.live"
   types       = ["AMAZON_ISSUED"]
   most_recent = true
-  provider    = aws.us-east-1
+  provider = aws.virginia
 }
+
