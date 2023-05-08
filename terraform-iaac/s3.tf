@@ -31,7 +31,7 @@ resource "aws_s3_bucket_website_configuration" "s3-resume-bucket-web-config" {
 
 }
 
-// Setting the bucket policy
+// Setting the bucket policy for public access
 resource "aws_s3_bucket_policy" "allow_access_from_another_account" {
   bucket = aws_s3_bucket.s3-resume-bucket.id
   policy = data.aws_iam_policy_document.allow_access_from_another_account.json
@@ -56,13 +56,13 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
   }
 }
 
-// Adding the html files to the s3 bucket
+// Uploading the html files to the s3 bucket
 resource "aws_s3_object" "webfiles" {
   for_each = local.website_files
 
-  bucket      = aws_s3_bucket.s3-resume-bucket.id
-  key         = each.key
-  source      = "${var.website_root}/${each.key}"
-  source_hash = filemd5("${var.website_root}/${each.key}")
+  bucket       = aws_s3_bucket.s3-resume-bucket.id
+  key          = each.key
+  source       = "${var.website_root}/${each.key}"
+  source_hash  = filemd5("${var.website_root}/${each.key}")
   content_type = lookup(local.mime_types, regex("\\.[^.]+$", each.key), null)
 }
