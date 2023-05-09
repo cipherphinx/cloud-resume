@@ -12,3 +12,11 @@ variable "website_root" {
   description = "Path to the root of website content"
   default     = "../webfiles"
 }
+
+variable "cf_domain" {
+  default = "resume1.arfeljunvelasco.live"
+}
+
+variable "lambda_function_name" {
+  default = "get-visitor-count-function"
+}

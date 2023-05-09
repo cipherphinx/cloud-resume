@@ -1,6 +1,6 @@
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-    domain_name = aws_s3_bucket.s3-resume-bucket.bucket_regional_domain_name
+    domain_name = aws_s3_bucket.s3-resume-bucket.website_endpoint
     origin_id   = local.s3_origin_id
   }
 
@@ -9,7 +9,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   comment             = "Some comment"
   default_root_object = "index.html"
 
-  aliases = ["resume1.arfeljunvelasco.live"]
+  aliases = [var.cf_domain]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -65,12 +65,13 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     acm_certificate_arn = data.aws_acm_certificate.amazon_issued.arn
     ssl_support_method  = "sni-only"
   }
+
 }
 
 data "aws_acm_certificate" "amazon_issued" {
   domain      = "*.arfeljunvelasco.live"
   types       = ["AMAZON_ISSUED"]
   most_recent = true
-  provider = aws.virginia
+  provider    = aws.virginia
 }
 

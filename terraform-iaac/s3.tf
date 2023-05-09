@@ -46,7 +46,6 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
       type        = "*"
       identifiers = ["*"]
     }
-
     actions = [
       "s3:GetObject"
     ]
