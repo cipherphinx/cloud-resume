@@ -19,7 +19,7 @@ resource "aws_cloudwatch_log_group" "cloudwatch_log_group" {
   retention_in_days = 14
 }
 
-data "aws_iam_policy_document" "lambda_logging" {
+data "aws_iam_policy_document" "lambda_logging_execution_policy" {
   statement {
     effect = "Allow"
 
@@ -45,7 +45,7 @@ resource "aws_iam_policy" "lambda_role" {
   name        = "lambda_logging"
   path        = "/"
   description = "IAM policy for logging from a lambda"
-  policy      = data.aws_iam_policy_document.lambda_logging.json
+  policy      = data.aws_iam_policy_document.lambda_logging_execution_policy.json
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_logs" {
