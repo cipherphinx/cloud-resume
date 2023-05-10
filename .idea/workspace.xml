@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the initial api gateway.tf files">
+    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the working api_gateway.tf file">
+      <change afterPath="$PROJECT_DIR$/terraform-iaac/temp/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform-iaac/temp/vars.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-iaac/api_gateway.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-iaac/api_gateway.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-iaac/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-iaac/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-iaac/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-iaac/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-iaac/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-iaac/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-iaac/mime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-iaac/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-iaac/vars.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;terraform-files&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "terraform-files",
+    "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/terraform-iaac/temp"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ciphe\Downloads\Documents\DevOps Projects\terraform-iaac\temp" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683630956088</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added the working api_gateway.tf file">
+      <created>1683711537841</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683711537841</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -95,6 +110,7 @@
     <MESSAGE value="added the working cloudfront.tf file" />
     <MESSAGE value="Added the working lambda.tf and dynamodb.tf files" />
     <MESSAGE value="Added the initial api gateway.tf files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the initial api gateway.tf files" />
+    <MESSAGE value="Added the working api_gateway.tf file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the working api_gateway.tf file" />
   </component>
 </project>
