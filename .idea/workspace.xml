@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the working api_gateway.tf file">
-      <change afterPath="$PROJECT_DIR$/terraform-iaac/temp/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform-iaac/temp/vars.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/terraform_cloud.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform-iaac/lambda_function_payload.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform-iaac/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-iaac/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-iaac/mime.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform-iaac/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform-iaac/vars.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "terraform-files",
+    "git-widget-placeholder": "terraform-cloud-provisioning",
     "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/terraform-iaac/temp"
   }
 }]]></component>
