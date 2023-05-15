@@ -2,7 +2,7 @@ describe('End to End test for my API', () => {
   let visitorCount1, visitorCount2;
 
   it('Check if visitor_count attribute is available and get its value from the API', () => {
-    cy.request('POST','https://za7vzhc1nc.execute-api.ap-southeast-1.amazonaws.com/v1')
+    cy.request('POST','https://api-update-count.arfeldevopsprojects.site')
       .then((response) => {
         expect(response.status).to.eq(200);
         expect(response.body).to.have.property('Attributes');
@@ -13,7 +13,7 @@ describe('End to End test for my API', () => {
 
     cy.wait(1000); // wait 1 second
 
-    cy.request('POST','https://za7vzhc1nc.execute-api.ap-southeast-1.amazonaws.com/v1')
+    cy.request('POST','https://api-update-count.arfeldevopsprojects.site')
       .then((response) => {
         expect(response.status).to.eq(200);
         expect(response.body.Attributes).to.have.property('visitor_count');
@@ -29,7 +29,7 @@ describe('End to End test for my API', () => {
   it('Checks if the API is accessible via other methods', () => {
     cy.request({
       method: 'GET',
-      url: 'https://za7vzhc1nc.execute-api.ap-southeast-1.amazonaws.com/v1',
+      url: 'https://api-update-count.arfeldevopsprojects.site',
       failOnStatusCode: false,
     }).then((response) => {
       //expect(response.status).to.eq(403);
