@@ -11,13 +11,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Dependencies
-        run: npm ci
-        working-directory: ../cypress/e2e
+     - name: Install dependencies
+        run: npm install
 
-      - name: Cypress tests
+      - name: Run Cypress tests
         uses: cypress-io/github-action@v5
         with:
           browser: chrome
-          working-directory: ./cypress/e2e/my-resume-spec.cy.js
-          build: npx cypress info
+          record: true
+          parallel: true
+          group: 'E2E Tests'
+          working-directory: cypress/e2e
