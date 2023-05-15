@@ -15,6 +15,6 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: chrome
-          working-directory: /cypress/e2e/my-resume-spec.cy.js
+          working-directory: /cypress/e2e
           build: npm run build
           start: npm start
