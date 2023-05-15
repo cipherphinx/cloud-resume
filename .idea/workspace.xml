@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the artifact">
-      <change afterPath="$PROJECT_DIR$/api_gateway.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamodb.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lambda.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lambda_function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vars.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the end to end test to the main workflow" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +35,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "terraform-cloud-provisioning",
+    "git-widget-placeholder": "terraform-cloud-provisioning-with…s-e2e",
     "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/Backend"
   }
 }]]></component>
@@ -118,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684058835993</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added the end to end test to the main workflow">
+      <created>1684143455285</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684143455285</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -128,6 +127,7 @@
     <MESSAGE value="Added the initial api gateway.tf files" />
     <MESSAGE value="Added the working api_gateway.tf file" />
     <MESSAGE value="Added the artifact" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the artifact" />
+    <MESSAGE value="Added the end to end test to the main workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the end to end test to the main workflow" />
   </component>
 </project>
