@@ -1,0 +1,19 @@
+name: "Cypress Test"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Test:
+    name: "End-to-end Test"
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@v5
+        with:
+          browser: chrome
+          working-directory: my-resume-spec.cy.js
+          build: npx cypress info
