@@ -16,4 +16,5 @@ jobs:
         with:
           browser: chrome
           working-directory: /cypress/e2e/my-resume-spec.cy.js
-          build: npx cypress info
+          build: npm run build
+          start: npm start
