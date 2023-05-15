@@ -10,6 +10,7 @@ terraform {
     }
   }
 
+  /*
   cloud {
     organization = "phinx-corporation"
 
@@ -17,6 +18,7 @@ terraform {
       name = "cloud-resume-backend"
     }
   }
+  */
 }
 
 provider "aws" {
@@ -38,6 +40,3 @@ locals {
 }
 
 data "aws_caller_identity" "current" {}
-
-
-

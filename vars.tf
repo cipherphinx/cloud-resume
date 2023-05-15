@@ -22,3 +22,19 @@ variable "cf_domain" {
 variable "lambda_function_name" {
   default = "get-visitor-count-function"
 }
+
+variable "api_domain_name" {
+  default = ".arfeldevopsprojects.site"
+}
+
+variable "api_sub_domain_name" {
+  default = "api-update-count"
+}
+
+variable "GODADDY_API_KEY" {
+  default = "TEST API KEY"
+}
+
+variable "GODADDY_API_SECRET" {
+  default = "TEST API SECRET"
+}
