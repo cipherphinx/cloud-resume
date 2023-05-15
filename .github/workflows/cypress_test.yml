@@ -11,14 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install dependencies and generate lockfile
-        run: npm ci
-        working-directory: cypress/e2e
-
-      - name: Cypress tests
-        uses: cypress-io/github-action@v5
+      - name: Install Node.js
+        uses: actions/setup-node@v2
         with:
-          browser: chrome
-          working-directory: /cypress/e2e
-          build: npm run build
-          start: npm start
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: npx cypress run --config integrationFolder=cypress/e2e/
