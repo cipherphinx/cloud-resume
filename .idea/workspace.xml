@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the artifact">
-      <change afterPath="$PROJECT_DIR$/api_gateway.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dynamodb.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lambda.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lambda_function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vars.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/terraform_cloud.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/terraform_cloud.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +38,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "terraform-cloud-provisioning",
+    "git-widget-placeholder": "terraform-cloud-provisioning-with…s-e2e",
     "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/Backend"
   }
 }]]></component>
