@@ -51,5 +51,5 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: chrome
-          working-directory: cypress/e2e
+          working-directory: my-resume-spec.cy.js
           build: npx cypress info
