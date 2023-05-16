@@ -57,10 +57,3 @@ jobs:
 
       - name: Run Cypress tests
         run: npx cypress run --config specPattern=cypress/e2e/
-        
-      - name: Cypress tests
-        uses: cypress-io/github-action@v5
-        with:
-          browser: chrome
-          working-directory: my-resume-spec.cy.js
-          build: npx cypress info
