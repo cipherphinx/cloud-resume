@@ -11,6 +11,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: npx cypress run --config specPattern=cypress/e2e/
+
       - name: Cypress tests
         uses: cypress-io/github-action@v5
         with:
