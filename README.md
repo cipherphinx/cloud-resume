@@ -14,6 +14,8 @@ The Cloud Resume Challenge, created by Forrest Brazeal, provides a practical opp
 
 - **GitHub Actions**: Configured Github Actions for CI/CD implementation. Changes commited on the main branch are automatically deployed to my website.
 
+- **Cypress**: Implemente an end-to-end testing for my working website using cypress scripts.
+
 ## Serverless Infrastructure Used
 
 - **AWS DynamoDB**: DynamoDB was used to store visitor count on my website
