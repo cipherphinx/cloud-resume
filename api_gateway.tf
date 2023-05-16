@@ -88,8 +88,37 @@ resource "aws_lambda_permission" "apigw_lambda" {
   source_arn = "arn:aws:execute-api:${var.region}:${local.accountID}:${aws_api_gateway_rest_api.lambda_api.id}/*/${aws_api_gateway_method.post_method.http_method}/"
 }
 
+
+resource "aws_api_gateway_domain_name" "api_domain_name" {
+  domain_name              = "${var.api_sub_domain_name}${var.api_domain_name}"
+  regional_certificate_arn = data.aws_acm_certificate.amazon_issued.arn
+
+  endpoint_configuration {
+    types = ["REGIONAL"]
+  }
+}
+
+data "aws_acm_certificate" "amazon_issued" {
+  domain      = "*.arfeldevopsprojects.site"
+  types       = ["AMAZON_ISSUED"]
+  most_recent = true
+}
+
 resource "aws_api_gateway_base_path_mapping" "example" {
   api_id      = aws_api_gateway_rest_api.lambda_api.id
   stage_name  = aws_api_gateway_stage.stage_v1.stage_name
-  domain_name = "api-update-count.arfeldevopsprojects.site"
+  domain_name = "${var.api_sub_domain_name}${var.api_domain_name}"
+
+  depends_on = [aws_api_gateway_domain_name.api_domain_name]
+}
+
+resource "godaddy_domain_record" "cname_record" {
+  domain = "arfeldevopsprojects.site"
+
+  record {
+    data = aws_api_gateway_domain_name.api_domain_name.regional_domain_name
+    name = var.api_sub_domain_name
+    type = "CNAME"
+    ttl  = 1800
+  }
 }

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the end to end test to the main workflow" />
+    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the end to end test to the main workflow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway.tf" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/vars.tf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "terraform-cloud-provisioning-with…s-e2e",
-    "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/Backend"
+    "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/Frontend"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -117,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684143455285</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added the end to end test to the main workflow">
+      <created>1684143927258</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684143927258</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
