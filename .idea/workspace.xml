@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the end to end test to the main workflow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_gateway.tf" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/vars.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamodb.tf" beforeDir="false" afterPath="$PROJECT_DIR$/dynamodb.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lambda.tf" beforeDir="false" afterPath="$PROJECT_DIR$/lambda.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "terraform-cloud-provisioning-with…s-e2e",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/Frontend"
   }
 }]]></component>

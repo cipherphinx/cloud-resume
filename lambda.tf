@@ -1,3 +1,11 @@
+
+# Creating the IAM role for lambda
+resource "aws_iam_role" "iam_for_lambda" {
+  name               = "iam_for_lambda"
+  assume_role_policy = data.aws_iam_policy_document.assume_role.json
+}
+
+# Creating the iam policy document
 data "aws_iam_policy_document" "assume_role" {
   statement {
     effect = "Allow"
@@ -9,16 +17,13 @@ data "aws_iam_policy_document" "assume_role" {
   }
 }
 
-resource "aws_iam_role" "iam_for_lambda" {
-  name               = "iam_for_lambda"
-  assume_role_policy = data.aws_iam_policy_document.assume_role.json
-}
-
+# Creating the cloudwatch log group for lambda
 resource "aws_cloudwatch_log_group" "cloudwatch_log_group" {
   name              = "/aws/lambda/${var.lambda_function_name}"
   retention_in_days = 14
 }
 
+# Writing the IAM policy document for the lambda basic execution role
 data "aws_iam_policy_document" "lambda_logging_execution_policy" {
   statement {
     effect = "Allow"
@@ -41,6 +46,7 @@ data "aws_iam_policy_document" "lambda_logging_execution_policy" {
   }
 }
 
+# Creating the IAM policy
 resource "aws_iam_policy" "lambda_role" {
   name        = "lambda_logging"
   path        = "/"
@@ -48,6 +54,7 @@ resource "aws_iam_policy" "lambda_role" {
   policy      = data.aws_iam_policy_document.lambda_logging_execution_policy.json
 }
 
+# Attaching the policy to the lambda function
 resource "aws_iam_role_policy_attachment" "lambda_logs" {
   role       = aws_iam_role.iam_for_lambda.name
   policy_arn = aws_iam_policy.lambda_role.arn
@@ -59,6 +66,7 @@ data "archive_file" "lambda" {
   output_path = "lambda_function_payload.zip"
 }
 
+# Creating the lambda function
 resource "aws_lambda_function" "get_visitor_count_function" {
   # If the file is not in the current working directory you will need to include a
   # path.module in the filename.
