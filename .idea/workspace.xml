@@ -206,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684403163864</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added the build test yml">
+      <created>1684403338297</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684403338297</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added the build test yml">
+      <created>1684404202329</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684404202329</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

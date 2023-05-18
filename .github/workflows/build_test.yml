@@ -6,6 +6,7 @@ on:
 jobs:
 
   build:
+
     name: Building the Artifact
     runs-on: ubuntu-latest
     steps:
@@ -30,10 +31,10 @@ jobs:
     needs: build
 
     steps:
-      - name: Checkout
+      - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Download artifact
+      - name: Download Artifact
         uses: actions/download-artifact@v3
         with:
           name: artifact
@@ -64,3 +65,23 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -input=false
+
+  Test:
+
+    name: "End-to-end Test"
+    runs-on: ubuntu-22.04
+    needs: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: npx cypress run --config specPattern=cypress/e2e/
