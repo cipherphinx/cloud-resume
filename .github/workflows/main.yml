@@ -5,17 +5,8 @@ on:
 
 jobs:
 
-  build:
-    name: Building the Artifact
-    runs-on: ubuntu-latest
-    steps:
-      
-      - name: Zipping the python code
-        run: |
-        cd artifact/
-        zip 
-
   deploy:
+
     name: "Provisioning Back-End Resources"
     runs-on: ubuntu-latest
 
@@ -49,6 +40,7 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -input=false
+
 
   Test:
     name: "End-to-end Test"
