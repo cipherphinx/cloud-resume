@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Updated the readme file and added comments on the script">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build_test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the build test yml">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build_test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build_test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_code/lambda_function.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684318908300</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added the build test yml">
+      <created>1684401278204</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401278204</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added the build test yml">
+      <created>1684401542700</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401542700</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,6 +161,7 @@
     <MESSAGE value="Added the artifact" />
     <MESSAGE value="Added the end to end test to the main workflow" />
     <MESSAGE value="Updated the readme file and added comments on the script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the readme file and added comments on the script" />
+    <MESSAGE value="Added the build test yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the build test yml" />
   </component>
 </project>

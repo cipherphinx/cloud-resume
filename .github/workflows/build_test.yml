@@ -16,3 +16,9 @@ jobs:
       - name: Zipping the python code
         run: |
           zip -r artifact/lambda_function_payload python_code/*
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact
+          path: artifact/lambda_function_payload.zip
