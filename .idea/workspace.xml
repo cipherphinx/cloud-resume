@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the end to end test to the main workflow">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_gateway.tf" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamodb.tf" beforeDir="false" afterPath="$PROJECT_DIR$/dynamodb.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambda.tf" beforeDir="false" afterPath="$PROJECT_DIR$/lambda.tf" afterDir="false" />
+    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the website end to end test script">
+      <change afterPath="$PROJECT_DIR$/cypress/e2e/backend-e2e-test.cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build_test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build_test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/my-resume-spec.cy.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +39,13 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "with-build-step",
     "last_opened_file_path": "C:/Users/ciphe/Downloads/Documents/DevOps Projects/Frontend"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ciphe\Downloads\Documents\DevOps Projects\Backend\python_code" />
       <recent name="C:\Users\ciphe\Downloads\Documents\DevOps Projects\Backend" />
       <recent name="C:\Users\ciphe\Downloads\Documents\DevOps Projects\terraform-iaac\temp" />
     </key>
@@ -130,7 +129,112 @@
       <option name="project" value="LOCAL" />
       <updated>1684143927258</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated the readme file and added comments on the script">
+      <created>1684318908300</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684318908300</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added the build test yml">
+      <created>1684401278204</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401278204</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added the build test yml">
+      <created>1684401542700</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401542700</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added the build test yml">
+      <created>1684401757239</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401757239</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added the build test yml">
+      <created>1684401946938</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684401946938</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added the build test yml">
+      <created>1684402018241</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684402018241</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added the build test yml">
+      <created>1684402088629</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684402088629</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added the build test yml">
+      <created>1684402381291</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684402381291</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added the build test yml">
+      <created>1684402470919</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684402470919</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added the build test yml">
+      <created>1684402665353</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684402665353</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added the build test yml">
+      <created>1684403163864</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684403163864</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added the build test yml">
+      <created>1684403338297</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684403338297</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added the build test yml">
+      <created>1684404202329</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684404202329</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added the build test yml">
+      <created>1684404803625</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1684404803626</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added the website end to end test script">
+      <created>1684406489904</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1684406489904</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +245,9 @@
     <MESSAGE value="Added the working api_gateway.tf file" />
     <MESSAGE value="Added the artifact" />
     <MESSAGE value="Added the end to end test to the main workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the end to end test to the main workflow" />
+    <MESSAGE value="Updated the readme file and added comments on the script" />
+    <MESSAGE value="Added the build test yml" />
+    <MESSAGE value="Added the website end to end test script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the website end to end test script" />
   </component>
 </project>
