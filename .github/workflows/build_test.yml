@@ -27,6 +27,7 @@ jobs:
 
     name: "Provisioning Back-End Resources"
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
       - name: Checkout
