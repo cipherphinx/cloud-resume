@@ -6,7 +6,7 @@ on:
 jobs:
 
   build:
-
+  
     name: Building the Artifact
     runs-on: ubuntu-latest
     steps:
