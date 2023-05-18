@@ -37,5 +37,5 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: artifact
-
+          path: artifact/lambda_function_payload.zip
 
