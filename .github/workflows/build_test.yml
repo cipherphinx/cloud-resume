@@ -1,0 +1,18 @@
+name: "Testing Building"
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    name: Building the Artifact
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Zipping the python code
+        run: |
+          zip -r artifact/lambda_function_payload python_code/*
