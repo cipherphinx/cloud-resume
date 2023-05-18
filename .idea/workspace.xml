@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the build test yml">
-      <change afterPath="$PROJECT_DIR$/cypress/e2e/website-e2e-test.cy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="320dc347-b692-4412-b002-ce49e9b9ca82" name="Changes" comment="Added the website end to end test script">
+      <change afterPath="$PROJECT_DIR$/cypress/e2e/backend-e2e-test.cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build_test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build_test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/my-resume-spec.cy.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684404803626</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added the website end to end test script">
+      <created>1684406489904</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1684406489904</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,6 +247,7 @@
     <MESSAGE value="Added the end to end test to the main workflow" />
     <MESSAGE value="Updated the readme file and added comments on the script" />
     <MESSAGE value="Added the build test yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the build test yml" />
+    <MESSAGE value="Added the website end to end test script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the website end to end test script" />
   </component>
 </project>
