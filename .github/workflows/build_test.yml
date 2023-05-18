@@ -68,7 +68,7 @@ jobs:
 
   Test:
 
-    name: "End-to-end Test"
+    name: "End-to-End Test"
     runs-on: ubuntu-22.04
     needs: deploy
     steps:

@@ -18,7 +18,7 @@ describe('End to End test for my API', () => {
         expect(response.status).to.eq(200);
         expect(response.body.Attributes).to.have.property('visitor_count');
         visitorCount2 = response.body.Attributes.visitor_count.N;
-        
+
       });
   });
 
